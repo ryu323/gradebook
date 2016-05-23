@@ -1,0 +1,19 @@
+{
+  "name": "gradebook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryu323/gradebook.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryu323/gradebook/issues"
+  },
+  "homepage": "https://github.com/ryu323/gradebook#readme"
+}
