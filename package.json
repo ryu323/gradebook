@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server/server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/ryu323/gradebook/issues"
   },
-  "homepage": "https://github.com/ryu323/gradebook#readme"
+  "homepage": "https://github.com/ryu323/gradebook#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-register": "^6.9.0",
+    "express": "^4.13.4"
+  }
 }
