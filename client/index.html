@@ -2,8 +2,15 @@
 <html>
 <head>
   <title>gradebook app</title>
+  <script src="node_modules/angular/angular.min.js"></script>
+  <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
 </head>
-<body>
-  <h1>Hello World!</h1>
+<body ng-app="GradebookApp">
+  <nav><img src="./assets/logo.png" height="50" length="200" /></nav>
+  <div class="container">
+    <div ui-view></div>
+  </div>
+  <script src="./app/app.js"></script>
+  <script src="./app/gradebook/gradebook.controller.js"></script>
 </body>
 </html>
