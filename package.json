@@ -18,10 +18,7 @@
   "homepage": "https://github.com/ryu323/gradebook#readme",
   "dependencies": {
     "angular": "^1.5.5",
-    "angular-ui-router": "^0.3.0"
-  },
-  "devDependencies": {
-    "babel-register": "^6.9.0",
+    "angular-ui-router": "^0.3.0",
     "body-parser": "^1.15.1",
     "express": "^4.13.4",
     "mongoose": "^4.4.19"
