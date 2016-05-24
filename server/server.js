@@ -25,9 +25,12 @@ var jsonParser = require('body-parser').json();
 var StudentsController = require('./controllers/students.controller.js');
 var TestsController = require('./controllers/tests.controller.js');
 
-app.post('/api/students/add', jsonParser, StudentsController.addStudent);
+app.post('/api/students/addStudent', jsonParser, StudentsController.addStudent);
 app.post('/api/tests/addTest', jsonParser, TestsController.addTest);
 app.post('/api/tests/addScore', jsonParser, TestsController.addScore);
+
+app.get('/api/students/getStudents', jsonParser, StudentsController.getStudents);
+app.get('/api/tests/getScores', jsonParser, TestsController.getScores);
 
 
 // start server

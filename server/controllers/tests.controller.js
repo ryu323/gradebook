@@ -40,3 +40,12 @@ exports.addScore = function(req, res) {
     res.status(200).send(req.body)
   })
 };
+
+exports.getScores = function(req, res) {
+  Test.find({}, function(err, response) {
+    if (err) {
+      console.log("Error fetching all scores: ", err);
+    }
+    res.status(200).send(response);
+  });
+}

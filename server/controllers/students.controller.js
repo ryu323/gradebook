@@ -13,5 +13,13 @@ exports.addStudent = function(req, res) {
     }
     res.status(200).send(student);
   });
+}
 
+exports.getStudents = function(req, res) {
+  Student.find({}, function(err, response) {
+    if (err) {
+      console.log("Error fetching all students: ", err);
+    }
+    res.status(200).send(response);
+  });
 }
