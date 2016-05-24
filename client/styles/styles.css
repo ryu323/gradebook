@@ -1,0 +1,69 @@
+nav {
+  position: fixed;
+  height: 75px;
+  width: 100%;
+  background-color: white;
+  padding: 15px;
+  border-bottom: 5px solid blue;
+}
+
+nav .logo {
+  height: 40px;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 25px;
+  padding-top: 100px;
+  background: #47CBFF; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#47CBFF, #4367F7); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#47CBFF, #4367F7); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#47CBFF, #4367F7); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#47CBFF, #4367F7); /* Standard syntax */
+}
+
+table {
+  background-color: #eeeeee;
+}
+
+th:nth-child(3), td:nth-child(3) {
+  border-left: 2px solid #ddd;
+}
+
+.student {
+  font-size: 120%;
+  width: 100px;
+  text-align: center
+}
+
+.student .first {
+  color: #55A5FA;
+}
+
+.student .last {
+  color: #999;
+}
+
+.test {
+  font-size: 90%;
+  font-weight: 400;
+}
+
+.test.name {
+  color: #55A5FA;
+}
+
+.test.date {
+  color: #999;
+}
+
+.score {
+  text-align: center;
+  color: #24C924;
+  font-size: 125%;
+}
+
+.score.avg {
+  font-size: 150%;
+}

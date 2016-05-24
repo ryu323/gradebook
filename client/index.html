@@ -2,11 +2,14 @@
 <html>
 <head>
   <title>gradebook app</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+  <link href="styles/styles.css" rel="stylesheet">
   <script src="node_modules/angular/angular.min.js"></script>
   <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="node_modules/moment/min/moment.min.js"></script>
 </head>
-<body ng-app="GradebookApp">
-  <nav><img src="./assets/logo.png" height="50" length="200" /></nav>
+<body ng-app="GradebookApp" ng-cloak>
+  <nav><img class="logo" src="./assets/logo.png" /></nav>
   <div class="container">
     <div ui-view></div>
   </div>

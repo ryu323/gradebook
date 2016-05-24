@@ -1,19 +1,32 @@
-<table>
+<table class="table table-hover">
   <thead>
     <th></th>
     <th></th>
-    <th ng-repeat="(testName, testInfo) in gradebook.tests">{{ testName }}</th>
+    <th ng-repeat="(testName, testInfo) in gradebook.tests">
+      <div class="test name">{{ testName }}</div>
+      <div class="test date">{{ testInfo.date }}</div>
+    </th>
   </thead>
   <tbody>
     <tr>
       <td></td>
       <td></td>
-      <td ng-repeat="(testName, testInfo) in gradebook.tests">{{ gradebook.getAverage(testInfo.scores) }}</td>
+      <td ng-repeat="(testName, testInfo) in gradebook.tests" class="score avg">
+        {{ gradebook.getAverage(testInfo.scores) }}<span>%</span>
+      </td>
     </tr>
     <tr ng-repeat="(student, studentInfo) in gradebook.students">
-      <td>{{ studentInfo.firstName }}</td>
-      <td>{{ gradebook.getAverage(studentInfo.scores) }}</td>
-      <td ng-repeat="(testName, testScore) in studentInfo.scores">{{ testScore }}</td>
+      <td class="student">
+        <span class="first">{{ studentInfo.firstName }}</span>
+        <br>
+        <span class="last">{{ studentInfo.lastName}}</span>
+      </td>
+      <td class="score avg">
+        {{ gradebook.getAverage(studentInfo.scores) }}<span ng-show="gradebook.getAverage(studentInfo.scores) !== ''">%</span>
+      </td>
+      <td ng-repeat="(testName, testScore) in studentInfo.scores" class="score">
+        {{ testScore }}<span ng-show="testScore !== ''">%</span><span ng-show="testScore === ''">-</span>
+      </td>
     </tr>
   </tbody>
 </table>

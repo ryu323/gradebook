@@ -35,8 +35,9 @@ function gradebookFactory($http) {
   function saveScores(scoresData, studentsObj, testsObj) {
     scoresData.forEach(function(test) {
       var testName = test.test_name;
+      var testDate = moment(test.date).format('MMM Do');
       var testData = {
-        date: test.date,
+        date: testDate,
         scores: []
       }
       testsObj[testName] = testData;
